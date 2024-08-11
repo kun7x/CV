@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-This project is a personal portfolio website designed to showcase your profession, skills, and contact information. The website is built with HTML and CSS, offering a responsive and modern design. It includes a homepage, profession page, and a contact page with links to your social profiles.
+This project is a personal portfolio website designed to showcase my profession, skills, and contact information. The website is built with HTML and CSS, offering a responsive and modern design. It includes a homepage, profession page, and a contact page with links to your social profiles.
 
 ## Table of Contents
 
