@@ -1,0 +1,311 @@
+
+/* CSS Variables */
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent-color: #8E8E8E;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --text-light-color: #2b2b2b;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container */
+body, html {
+    height: 100%;
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0; /* Reduced padding */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow size */
+    margin-bottom: 15px; /* Reduced margin */
+    position: relative;
+}
+
+header h1 {
+    font-size: 2em; /* Reduced font size */
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0; /* Reduced padding */
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+nav ul li {
+    margin: 0 10px; /* Reduced margin */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em; /* Reduced font size */
+    padding: 5px 8px; /* Reduced padding */
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+}
+
+/* Main Content Styling */
+main {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+main h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: var(--text-light-color);
+    line-height: 1.8;
+}
+
+.profile-photo {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow size */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em; /* Reduced font size */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-photo {
+        width: 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+/* Style the contact list */
+/* Style the contact container */
+.contact-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: flex-start; /* Aligns items to the top */
+    margin-top: 20px;
+}
+
+/* Style the contact list */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Ensures items are stacked vertically */
+}
+
+.contact-list li {
+    margin-bottom: 10px; /* Space between each link */
+}
+
+.contact-link {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    display: block; /* Ensures each link takes up its own line */
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Adjustments to main section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start of the container */
+}
+
+/* Main Content Styling */
+main {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-bottom: 60px; /* Space for footer */
+    display: flex;
+}
+
+/* Profession Container */
+.profession-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px; /* Space between sections */
+}
+
+/* Profession Details */
+.profession-details {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Summary */
+.skills-summary {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h2, h3 {
+    color: var(--primary-color);
+}
+
+/* Adjustments for larger screens */
+@media (max-width: 768px) {
+    .profession-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid black;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: black;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: var(--text-light-color);
+    box-shadow: 0  0 25px var(--text-light-color);
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--text-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: var(--text-color);
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: var(--background-color);
+    box-shadow: 0  0 25px var(--text-color);
+}
