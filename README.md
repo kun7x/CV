@@ -14,7 +14,7 @@ This project is a personal portfolio website designed to showcase your professio
 
 ## Demo
 
-Check out the live demo of the portfolio website [here](#).
+Check out the live demo of the portfolio website [here](https://kun7x.github.io/CV/).
 
 ## Features
 
@@ -33,7 +33,10 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/kun7x/CV.git
+   
 ## File Structure
+
+   ```bash
 /CV
 │
 ├── index.html             # Homepage
